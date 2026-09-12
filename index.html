@@ -98,6 +98,13 @@
     .button:active {
       transform: scale(0.98);
     }
+
+    /* Center the video */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
   </style>
 </head>
 
@@ -113,22 +120,22 @@
     <a href="refund.html">Refund/Return Policy</a>
     <a href="disclaimer.html">Disclaimer</a>
     <a href="https://gamefans.web.app/" target="_blank">Adventure Games</a>
-
     <a href="https://deepakslot.web.app/" target="_blank">Slot</a>
     <a href="https://catbal.web.app/" target="_blank">Cat</a>
     <a href="https://deepakrummy.github.io/game/" target="_blank">Wow Games</a>
   </nav>
 </header>
 
-
-  <!-- YouTube embed with autoplay enabled -->
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/XPS7b0gMLFI?autoplay=1&mute=1"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+  <!-- YouTube embed with autoplay enabled, centered -->
+  <div class="video-container">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/XPS7b0gMLFI?autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
 
 <footer>
   <p>© 2026 Deepak IT & Web Services</p>
