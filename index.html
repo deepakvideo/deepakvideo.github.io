@@ -3,8 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Auto Play YouTube Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    nav {
+      background-color: #333;
+      padding: 0.5em;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    iframe {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="refund.html">Refund Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </nav>
+
   <!-- YouTube embed with autoplay enabled -->
   <iframe width="560" height="315"
     src="https://www.youtube.com/embed/XPS7b0gMLFI?autoplay=1&mute=1"
@@ -13,5 +58,6 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+
 </body>
 </html>
