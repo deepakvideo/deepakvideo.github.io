@@ -11,6 +11,29 @@
 	
 	<title>Play Games</title>
 	
+nav {
+  display: flex;              /* arrange links in a row */
+  justify-content: center;    /* center them horizontally */
+  gap: 12px;                  /* spacing between buttons */
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #b8860b, #ffd700); /* gold button style */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, #ffd700, #b8860b);
+  color: #333;
+  transform: scale(1.05);
+}
 
 	<link rel="canonical" href="index.htm">	<script async="" src="build\assets\js\theme-default\app-c4dd3ec88c.js"></script>
 	
@@ -98,21 +121,6 @@
       font-weight: bold;
     }
 
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #333;
-    }
 
     section {
       padding: 20px;
