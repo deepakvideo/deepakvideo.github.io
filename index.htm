@@ -63,7 +63,6 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       background-color: #fff8f0;
       color: #333;
     }
@@ -71,38 +70,42 @@
     header {
       background: linear-gradient(90deg, #b8860b, #ffd700);
       color: #fff;
-      padding: 15px 20px;
+      padding: 20px;
       text-align: center;
     }
 
     header h1 {
-      margin: 0 0 10px 0;
-      font-size: 1.8em;
+      margin: 0 0 15px 0;
+      font-size: 2em;
       font-weight: bold;
     }
 
-    /* Force horizontal flex layout for the menu */
+    /* Horizontal nav container */
     nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 8px 16px;
-      margin-top: 10px;
+      gap: 12px 20px;
     }
 
+    /* Large menu link styling */
     nav a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      white-space: nowrap; /* Prevents text from breaking mid-word */
-      transition: color 0.3s ease;
+      font-size: 1.25em; /* Large text size */
+      padding: 6px 10px;
+      white-space: nowrap;
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
       color: #333;
+      transform: scale(1.05); /* Optional subtle zoom effect on hover */
     }
   </style>
+
 		<script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '14kvr'});</script>
 	
 	<!-- Yandex.Metrika counter -->
