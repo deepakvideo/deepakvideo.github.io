@@ -11,29 +11,6 @@
 	
 	<title>Play Games</title>
 	
-nav {
-  display: flex;              /* arrange links in a row */
-  justify-content: center;    /* center them horizontally */
-  gap: 12px;                  /* spacing between buttons */
-  margin-top: 10px;
-}
-
-nav a {
-  display: inline-block;
-  padding: 8px 16px;
-  background: linear-gradient(90deg, #b8860b, #ffd700); /* gold button style */
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background: linear-gradient(90deg, #ffd700, #b8860b);
-  color: #333;
-  transform: scale(1.05);
-}
 
 	<link rel="canonical" href="index.htm">	<script async="" src="build\assets\js\theme-default\app-c4dd3ec88c.js"></script>
 	
@@ -78,6 +55,22 @@ nav a:hover {
 	
 				article .inner nav ul li a.active { background-color: #a463a5; }
 		}
+nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
 	</style>
 	
 	<script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '14kvr'});</script>
@@ -97,94 +90,7 @@ nav a:hover {
 </script> 
 <noscript><div><img src="https://mc.yandex.ru/watch/56974468" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-	<style>
-    /* Gold themed design */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #fff8f0; /* soft background */
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(90deg, #b8860b, #ffd700); /* gold gradient */
-      color: #fff;
-      padding: 15px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-      font-weight: bold;
-    }
-
-
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #b8860b;
-      border-bottom: 2px solid #ffd700;
-      padding-bottom: 5px;
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 0.9em;
-    }
-
-    a {
-      color: #b8860b;
-    }
-
-    a:hover {
-      color: #ffd700;
-    }
-
-    /* Gold themed button styles */
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 0;
-      font-size: 1em;
-      font-weight: bold;
-      color: #fff;
-      background: linear-gradient(90deg, #b8860b, #ffd700);
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .button:hover {
-      background: linear-gradient(90deg, #ffd700, #b8860b);
-      color: #333;
-      transform: scale(1.05);
-    }
-
-    .button:active {
-      transform: scale(0.98);
-    }
-
-    /* Center the video */
-    .video-container {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
-  </style>
-	</head>
+		</head>
 <body>
 <div class="holder">
 	<input type="checkbox" id="offScreenNavigationTrigger">
@@ -203,6 +109,8 @@ nav a:hover {
 		<ul><li><a class="active" href="index.htm"><span>Home</span></a></li><li><a href="skill.html"><em>(124)</em><span>Skill Games</span></a></li><li><a href="quiz.html"><em>(17)</em><span>Quiz Games</span></a></li><li><a href="match-3.html"><em>(57)</em><span>Match-3 Games</span></a></li><li><a href="girls.html"><em>(144)</em><span>Girls</span></a></li><li><a href="racing.html"><em>(24)</em><span>Racing</span></a></li><li><a href="cars.html"><em>(13)</em><span>Car Games</span></a></li><li><a href="jump-and-run.html"><em>(22)</em><span>Jump &amp; Run</span></a></li><li><a href="puzzle.html"><em>(152)</em><span>Puzzle Games</span></a></li><li><a href="sports.html"><em>(62)</em><span>Sports Games</span></a></li><li><a href="action.html"><em>(27)</em><span>Action Games</span></a></li><li><a href="arcade.html"><em>(106)</em><span>Arcade</span></a></li><li><a href="cooking.html"><em>(12)</em><span>Cooking Games</span></a></li><li><a href="bubble-shooter.html"><em>(17)</em><span>Bubble Shooter</span></a></li><li><a href="cards.html"><em>(27)</em><span>Card Games</span></a></li></ul>	</section>
 
 	<article>
+
+
 		<header>
   <h1>Deepak IT & Web Services</h1>
   <nav>
