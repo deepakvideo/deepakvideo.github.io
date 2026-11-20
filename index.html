@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IndiaGames.online - Free Browser Games Hub | Deepak IT &amp; Web Services</title>
-  <meta name="description" content="Play free browser arcade, puzzle, reflex, and casual games on IndiaGames.online. Developed by Deepak IT & Web Services with no login required.">
+  <title>IndiaGames.online - Game Source Code, Engine Support &amp; Guides | Deepak IT &amp; Web Services</title>
+  <meta name="description" content="Game source code resources, technical explanations, and developer support for Android Java, Flutter, Unity, Buildbox, and Cocos by Deepak IT & Web Services.">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -127,14 +127,14 @@
       margin: 16px 0 24px;
     }
 
-    .categories-grid {
+    .stack-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 18px;
       margin: 20px 0;
     }
 
-    .category-card {
+    .stack-card {
       background: #fff;
       border: 1px solid #f0e0c0;
       border-top: 4px solid #b8860b;
@@ -143,32 +143,22 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
-    .category-card i {
+    .stack-card i {
       font-size: 1.8em;
       color: #b8860b;
       margin-bottom: 10px;
       display: inline-block;
     }
 
-    .category-card h3 {
+    .stack-card h3 {
       margin: 4px 0 8px;
       color: #222;
     }
 
-    .category-card p {
-      margin: 0 0 12px;
+    .stack-card p {
+      margin: 0;
       font-size: 0.94em;
       color: #555;
-    }
-
-    .category-card a {
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 0.92em;
-    }
-
-    .category-card a:hover {
-      text-decoration: underline;
     }
 
     .info-list {
@@ -181,6 +171,15 @@
 
     .info-list li {
       margin-bottom: 8px;
+    }
+
+    .support-box {
+      background: #fff;
+      border: 1px solid #f0e0c0;
+      border-radius: 6px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
     }
 
     .ad-wrapper {
@@ -229,14 +228,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header>
-  <h1>IndiaGames.online — Free Games Hub</h1>
-  <p>Browser Arcade, Puzzle &amp; Casual Games by Deepak IT &amp; Web Services</p>
+  <h1>IndiaGames.online — Game Code &amp; Engine Hub</h1>
+  <p>Game Source Code, Explanations &amp; Support by Deepak IT &amp; Web Services</p>
   <nav aria-label="Primary Navigation">
     <a href="index.html">Home</a>
-    <a href="games/index.html">Games</a>
+    <a href="#engines">Engine Support</a>
+    <a href="#explanations">Explanations</a>
+    <a href="contact.html">Contact Us</a>
     <a href="about.html">About Us</a>
-    <a href="safety.html">Safety</a>
-    <a href="contact.html">Contact</a>
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms</a>
     <a href="refund.html">Refunds</a>
@@ -245,56 +244,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
 <section id="home">
-  <h2>Instant Browser Play — No Sign-Up Required</h2>
-  <p>Welcome to <strong>IndiaGames.online</strong>, a free casual gaming portal developed and maintained by <strong>Deepak IT &amp; Web Services</strong>. Our goal is to offer fast-loading HTML5 and web games that run smoothly in modern desktop and mobile browsers without requiring accounts, heavy downloads, or complex setup.</p>
-  <p>Whether you have two minutes for a quick logic puzzle between tasks or want to practice timing and reflexes in an arcade round, every title on the hub is designed for accessible, family-friendly play.</p>
+  <h2>Game Source Code &amp; Technical Explanations</h2>
+  <p><strong>IndiaGames.online</strong> is developed and maintained by <strong>Deepak IT &amp; Web Services</strong> to share game source code resources, clear technical explanations, and implementation support for developers, students, and indie creators.</p>
+  <p>Instead of leaving you with raw files alone, we focus on explaining how game loops, scenes, physics, UI screens, and project structures fit together so you can learn, customize, and build upon them with confidence.</p>
 
   <div class="store-buttons">
-    <a href="games/index.html" class="button">Browse All Browser Games</a>
+    <a href="contact.html" class="button">Contact Us for Support</a>
     <a href="https://play.google.com/store/apps/dev?id=8238310094150870674" target="_blank" rel="noopener" class="button button-secondary">Google Play Developer Page</a>
     <a href="ms-windows-store://publisher/?name=Deepak+IT+%26+Web+Services" class="button button-secondary">Microsoft Store Publisher</a>
   </div>
 
-  <h2>Game Genres &amp; Highlights</h2>
-  <p>Explore the main types of interactive experiences available through our games library:</p>
+  <h2 id="engines">Supported Engines &amp; Frameworks</h2>
+  <p>We provide code resources, setup guidance, and troubleshooting support across popular 2D and mobile game stacks:</p>
 
-  <div class="categories-grid">
-    <div class="category-card">
-      <i class="fas fa-gamepad" aria-hidden="true"></i>
-      <h3>Arcade Classics</h3>
-      <p>Fast-paced score chasers and classic action loops built around simple controls, instant restarts, and progressive difficulty.</p>
-      <a href="games/index.html">Explore Arcade Games &rarr;</a>
+  <div class="stack-grid">
+    <div class="stack-card">
+      <i class="fab fa-android" aria-hidden="true"></i>
+      <h3>Android (Java)</h3>
+      <p>Native Android game architecture, canvas rendering, activity/lifecycle handling, input listeners, and score/state management.</p>
     </div>
 
-    <div class="category-card">
-      <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
-      <h3>Logic &amp; Brain Puzzles</h3>
-      <p>Pattern recognition, grid challenges, and thoughtful puzzles designed for calm problem-solving at your own pace.</p>
-      <a href="games/index.html">Explore Puzzle Games &rarr;</a>
+    <div class="stack-card">
+      <i class="fas fa-mobile-screen" aria-hidden="true"></i>
+      <h3>Flutter</h3>
+      <p>Cross-platform UI screens, state handling, animations, and 2D game integration for Android and iOS builds.</p>
     </div>
 
-    <div class="category-card">
-      <i class="fas fa-bolt" aria-hidden="true"></i>
-      <h3>Reflex &amp; Timing</h3>
-      <p>Short, replayable rounds focused on reaction speed, rhythm, and precision—ideal for quick mobile or desktop sessions.</p>
-      <a href="games/index.html">Explore Reflex Games &rarr;</a>
+    <div class="stack-card">
+      <i class="fab fa-unity" aria-hidden="true"></i>
+      <h3>Unity</h3>
+      <p>C# scripts, scene flow, prefabs, physics/collision setup, UI menus, and build configuration guidance.</p>
     </div>
 
-    <div class="category-card">
-      <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
-      <h3>Cross-Device Support</h3>
-      <p>Responsive layouts and touch- or keyboard-friendly controls so you can switch from a laptop to a phone without friction.</p>
-      <a href="about.html">How Our Platform Works &rarr;</a>
+    <div class="stack-card">
+      <i class="fas fa-cubes" aria-hidden="true"></i>
+      <h3>Buildbox</h3>
+      <p>Visual node/logic workflows, obstacle and level patterns, UI navigation, and project export troubleshooting.</p>
+    </div>
+
+    <div class="stack-card">
+      <i class="fas fa-code" aria-hidden="true"></i>
+      <h3>Cocos &amp; Other Engines</h3>
+      <p>2D scene/component structure, sprite/animation handling, and general game logic explanations across similar engines.</p>
     </div>
   </div>
 
-  <h2>Tips for Smooth Browser Gameplay</h2>
+  <h2 id="explanations">How Our Explanations &amp; Support Work</h2>
   <ul class="info-list">
-    <li><strong>Keep your browser updated:</strong> Modern versions of Chrome, Edge, Firefox, and Safari provide the best HTML5 canvas and audio performance.</li>
-    <li><strong>Use landscape mode on smaller screens:</strong> Rotating your phone or tablet horizontally often gives arcade and action games wider visibility.</li>
-    <li><strong>Check controls before starting:</strong> Each game page outlines whether it uses touch tap/swipe, mouse clicks, or arrow/WASD keys.</li>
-    <li><strong>Report bugs or broken links:</strong> If a game loads slowly or doesn't respond as expected, let us know via our <a href="contact.html">Contact page</a> so we can fix it.</li>
+    <li><strong>Step-by-step code explanations:</strong> Clear breakdowns of what key scripts, scenes, and variables do rather than unexplained code dumps.</li>
+    <li><strong>Project structure &amp; setup help:</strong> Guidance on organizing folders, assets, menus, and gameplay loops cleanly.</li>
+    <li><strong>Customization &amp; debugging support:</strong> Help clarifying how to modify rules, layouts, or mechanics for your own project.</li>
+    <li><strong>Transparent policies:</strong> Clear terms, privacy, refund, and disclaimer details available in the header and footer.</li>
   </ul>
+
+  <div class="support-box">
+    <h3 style="margin-top:0; color:#b8860b;">Need Code Help or Have Questions?</h3>
+    <p style="margin-bottom:12px;">Reach out to <strong>Deepak IT &amp; Web Services</strong> through our contact page for inquiries regarding game code, engine support in Android Java, Flutter, Unity, Buildbox, Cocos, or general assistance.</p>
+    <a href="contact.html" class="button">Go to Contact Us</a>
+  </div>
 
   <!-- AdSense Ad Unit -->
   <div class="ad-wrapper">
@@ -315,14 +322,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>&copy; 2026 Deepak IT &amp; Web Services | Verified Enterprise (MSME &amp; GST Registered) | Microsoft for Startups Partner</p>
   <p>
     <a href="index.html">Home</a> |
-    <a href="games/index.html">Games</a> |
+    <a href="contact.html">Contact Us</a> |
     <a href="about.html">About Us</a> |
-    <a href="safety.html">Safety</a> |
     <a href="privacy.html">Privacy Policy</a> |
     <a href="terms.html">Terms</a> |
     <a href="refund.html">Refunds</a> |
-    <a href="disclaimer.html">Disclaimer</a> |
-    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
   </p>
 </footer>
 
