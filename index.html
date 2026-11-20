@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deepak IT & Web Services - Free Games Hub</title>
-  
-  <!-- Font Awesome (Required for your .fab icons) -->
+  <title>IndiaGames.online - Free Browser Games Hub | Deepak IT &amp; Web Services</title>
+  <meta name="description" content="Play free browser arcade, puzzle, reflex, and casual games on IndiaGames.online. Developed by Deepak IT & Web Services with no login required.">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Google Tag Manager -->
@@ -25,7 +26,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      line-height: 1.65;
       background-color: #fff8f0;
       color: #333;
     }
@@ -33,19 +34,25 @@
     header {
       background: linear-gradient(90deg, #b8860b, #ffd700);
       color: #fff;
-      padding: 15px 20px;
+      padding: 18px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.8em;
+      font-size: 1.85em;
       font-weight: bold;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     }
 
+    header p {
+      margin: 6px 0 0;
+      font-size: 0.95em;
+      color: #fffdf7;
+    }
+
     nav {
-      margin-top: 10px;
+      margin-top: 12px;
     }
 
     nav a {
@@ -64,7 +71,7 @@
 
     section {
       padding: 20px;
-      max-width: 900px;
+      max-width: 920px;
       margin: auto;
     }
 
@@ -72,26 +79,7 @@
       color: #b8860b;
       border-bottom: 2px solid #ffd700;
       padding-bottom: 5px;
-      margin-top: 30px;
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 0.9em;
-    }
-
-    footer a {
-      color: #ffd700;
-      text-decoration: none;
-      margin: 0 6px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+      margin-top: 32px;
     }
 
     a {
@@ -99,7 +87,7 @@
     }
 
     a:hover {
-      color: #ffd700;
+      color: #8c6506;
     }
 
     .button {
@@ -114,52 +102,122 @@
       border-radius: 5px;
       text-decoration: none;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: transform 0.25s ease, color 0.25s ease;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     }
 
     .button:hover {
-      background: linear-gradient(90deg, #ffd700, #b8860b);
-      color: #333;
-      transform: scale(1.05);
+      color: #222;
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      background: #fff;
+      color: #8c6506;
+      border: 2px solid #b8860b;
+      text-shadow: none;
+    }
+
+    .button-secondary:hover {
+      background: #fff3d6;
+      color: #222;
     }
 
     .store-buttons {
-      margin: 15px 0;
+      margin: 16px 0 24px;
     }
 
-    /* Added missing CSS for the advert grid and cards */
-    .advert-section {
+    .categories-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin: 25px 0;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
     }
 
-    .advert-box {
+    .category-card {
       background: #fff;
       border: 1px solid #f0e0c0;
       border-top: 4px solid #b8860b;
       border-radius: 6px;
       padding: 20px;
-      text-align: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
-    .advert-box i {
-      font-size: 2em;
+    .category-card i {
+      font-size: 1.8em;
       color: #b8860b;
       margin-bottom: 10px;
+      display: inline-block;
     }
 
-    .advert-box h3 {
-      margin: 5px 0;
-      color: #333;
+    .category-card h3 {
+      margin: 4px 0 8px;
+      color: #222;
     }
 
-    .advert-box p {
-      margin: 5px 0 0;
+    .category-card p {
+      margin: 0 0 12px;
+      font-size: 0.94em;
+      color: #555;
+    }
+
+    .category-card a {
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.92em;
+    }
+
+    .category-card a:hover {
+      text-decoration: underline;
+    }
+
+    .info-list {
+      background: #fff;
+      border-left: 4px solid #b8860b;
+      padding: 15px 20px 15px 36px;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .info-list li {
+      margin-bottom: 8px;
+    }
+
+    .ad-wrapper {
+      margin: 28px 0;
+      padding: 12px;
+      background: #fff;
+      border: 1px solid #f0e0c0;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .ad-label {
+      display: block;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 18px 15px;
+      margin-top: 36px;
       font-size: 0.9em;
-      color: #666;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -171,75 +229,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header>
-  <h1>Deepak IT & Web Services - Games Hub</h1>
-  <nav>
+  <h1>IndiaGames.online — Free Games Hub</h1>
+  <p>Browser Arcade, Puzzle &amp; Casual Games by Deepak IT &amp; Web Services</p>
+  <nav aria-label="Primary Navigation">
     <a href="index.html">Home</a>
+    <a href="games/index.html">Games</a>
     <a href="about.html">About Us</a>
+    <a href="safety.html">Safety</a>
     <a href="contact.html">Contact</a>
     <a href="privacy.html">Privacy Policy</a>
-    <a href="safety.html">Safety</a>
     <a href="terms.html">Terms</a>
     <a href="refund.html">Refunds</a>
     <a href="disclaimer.html">Disclaimer</a>
-  
-    <a href="https://play.google.com/store/apps/dev?id=8238310094150870674" target="_blank" rel="noopener">Play Store</a>
-    <a href="ms-windows-store://publisher/?name=Deepak+IT+%26+Web+Services">Microsoft Store</a>
   </nav>
 </header>
 
 <section id="home">
-  <h2>Welcome to Free Games Hub</h2>
-  <p>Welcome to our free, open-source casual games hub. All games are hosted and developed by <strong>Deepak IT & Web Services</strong>. Enjoy family-friendly arcade games, puzzles, and interactive web experiences completely free with no login required.</p>
-
-  <h2>About Our Platform</h2>
-  <p>Our mission is to provide high-quality, lightweight browser games that work seamlessly across desktop and mobile devices. Whether you want to pass the time with a quick puzzle or challenge your high score in arcade games, our platform delivers safe, engaging entertainment for players of all ages.</p>
+  <h2>Instant Browser Play — No Sign-Up Required</h2>
+  <p>Welcome to <strong>IndiaGames.online</strong>, a free casual gaming portal developed and maintained by <strong>Deepak IT &amp; Web Services</strong>. Our goal is to offer fast-loading HTML5 and web games that run smoothly in modern desktop and mobile browsers without requiring accounts, heavy downloads, or complex setup.</p>
+  <p>Whether you have two minutes for a quick logic puzzle between tasks or want to practice timing and reflexes in an arcade round, every title on the hub is designed for accessible, family-friendly play.</p>
 
   <div class="store-buttons">
-    <a href="games/index.html" target="_blank" rel="noopener" class="button">Play Free Arcade & Puzzle Games</a>
-    <a href="https://play.google.com/store/apps/dev?id=8238310094150870674" target="_blank" rel="noopener" class="button">Visit us on Play Store</a>
-    <a href="ms-windows-store://publisher/?name=Deepak+IT+%26+Web+Services" class="button">Visit us on Microsoft Store</a>
+    <a href="games/index.html" class="button">Browse All Browser Games</a>
+    <a href="https://play.google.com/store/apps/dev?id=8238310094150870674" target="_blank" rel="noopener" class="button button-secondary">Google Play Developer Page</a>
+    <a href="ms-windows-store://publisher/?name=Deepak+IT+%26+Web+Services" class="button button-secondary">Microsoft Store Publisher</a>
   </div>
 
-  <div class="advert-section">
-    <div class="advert-box">
-      <i class="fab fa-youtube"></i>
-      <h3>YouTube</h3>
-      <p>Discover the latest Google Innovations.</p>
+  <h2>Game Genres &amp; Highlights</h2>
+  <p>Explore the main types of interactive experiences available through our games library:</p>
+
+  <div class="categories-grid">
+    <div class="category-card">
+      <i class="fas fa-gamepad" aria-hidden="true"></i>
+      <h3>Arcade Classics</h3>
+      <p>Fast-paced score chasers and classic action loops built around simple controls, instant restarts, and progressive difficulty.</p>
+      <a href="games/index.html">Explore Arcade Games &rarr;</a>
     </div>
-    
-    <div class="advert-box">
-      <i class="fab fa-google-drive"></i>
-      <h3>Google Drive</h3>
-      <p>Enhance your digital experience.</p>
+
+    <div class="category-card">
+      <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+      <h3>Logic &amp; Brain Puzzles</h3>
+      <p>Pattern recognition, grid challenges, and thoughtful puzzles designed for calm problem-solving at your own pace.</p>
+      <a href="games/index.html">Explore Puzzle Games &rarr;</a>
     </div>
-    
-    <div class="advert-box">
-      <i class="fab fa-google-play"></i>
-      <h3>Google Play</h3>
-      <p>Stay ahead with cutting-edge technology.</p>
+
+    <div class="category-card">
+      <i class="fas fa-bolt" aria-hidden="true"></i>
+      <h3>Reflex &amp; Timing</h3>
+      <p>Short, replayable rounds focused on reaction speed, rhythm, and precision—ideal for quick mobile or desktop sessions.</p>
+      <a href="games/index.html">Explore Reflex Games &rarr;</a>
     </div>
-    
-    <div class="advert-box">
-      <i class="fab fa-google"></i>
-      <h3>Google</h3>
-      <p>Improve productivity with AI-powered tools.</p>
-    </div>
-    
-    <div class="advert-box">
-      <i class="fab fa-google-wallet"></i>
-      <h3>Google Wallet</h3>
-      <p>Seamless integration for businesses.</p>
-    </div>
-    
-    <div class="advert-box">
-      <i class="fab fa-google-plus-g"></i>
-      <h3>Google Plus</h3>
-      <p>Security and privacy at the forefront.</p>
+
+    <div class="category-card">
+      <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+      <h3>Cross-Device Support</h3>
+      <p>Responsive layouts and touch- or keyboard-friendly controls so you can switch from a laptop to a phone without friction.</p>
+      <a href="about.html">How Our Platform Works &rarr;</a>
     </div>
   </div>
+
+  <h2>Tips for Smooth Browser Gameplay</h2>
+  <ul class="info-list">
+    <li><strong>Keep your browser updated:</strong> Modern versions of Chrome, Edge, Firefox, and Safari provide the best HTML5 canvas and audio performance.</li>
+    <li><strong>Use landscape mode on smaller screens:</strong> Rotating your phone or tablet horizontally often gives arcade and action games wider visibility.</li>
+    <li><strong>Check controls before starting:</strong> Each game page outlines whether it uses touch tap/swipe, mouse clicks, or arrow/WASD keys.</li>
+    <li><strong>Report bugs or broken links:</strong> If a game loads slowly or doesn't respond as expected, let us know via our <a href="contact.html">Contact page</a> so we can fix it.</li>
+  </ul>
 
   <!-- AdSense Ad Unit -->
-  <div style="margin:20px 0; text-align:center;">
+  <div class="ad-wrapper">
+    <span class="ad-label">Advertisement</span>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-6363845648031578"
@@ -247,18 +306,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Deepak IT & Web Services | Verified Enterprise (MSME & GST Registered) | Microsoft for Startups Partner</p>
+  <p>&copy; 2026 Deepak IT &amp; Web Services | Verified Enterprise (MSME &amp; GST Registered) | Microsoft for Startups Partner</p>
   <p>
-    <a href="privacy.html">Privacy Policy</a> | 
-    <a href="terms.html">Terms</a> | 
-    <a href="refund.html">Refunds</a> | 
-    <a href="disclaimer.html">Disclaimer</a> | 
+    <a href="index.html">Home</a> |
+    <a href="games/index.html">Games</a> |
+    <a href="about.html">About Us</a> |
+    <a href="safety.html">Safety</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms</a> |
+    <a href="refund.html">Refunds</a> |
+    <a href="disclaimer.html">Disclaimer</a> |
     <a href="contact.html">Contact</a>
   </p>
 </footer>
